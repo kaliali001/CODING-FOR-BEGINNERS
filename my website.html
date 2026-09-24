@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CodeBloom is a guided path from your first line of code to professional software development." />
+    <title>CodeBloom — Learn to code, one confident step at a time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="CodeBloom home"><span class="brand-mark">&lt;/&gt;</span>CodeBloom</a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav>
+        <a href="#path">Learning path</a><a href="#guides">Guides</a><a href="#toolkit">Toolkit</a>
+        <a href="#start" class="nav-cta">Start learning <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="start">
+        <div class="hero-photo"></div><div class="hero-grain"></div>
+        <div class="hero-copy">
+          <p class="eyebrow light">Your new creative superpower</p>
+          <h1>Build the future,<br /><em>line by line.</em></h1>
+          <p class="hero-text">A welcoming, practical path from your very first <code>hello world</code> to shipping software you're proud of.</p>
+          <div class="hero-actions"><a href="#path" class="button button-primary">Explore your path <span>↓</span></a><a href="#guides" class="text-link">See free guides <span>→</span></a></div>
+        </div>
+        <div class="hero-card"><span class="pulse"></span><span>Today’s small win</span><strong>Write your first function</strong><small>12 min · Beginner</small></div>
+        <p class="scroll-note">Scroll to begin <span>↓</span></p>
+      </section>
+
+      <section class="intro section-pad">
+        <p class="eyebrow">No mystery. No gatekeeping.</p>
+        <div class="intro-grid"><h2>Coding isn't about being a genius.<br />It's about being <em>curious.</em></h2><p>Whether you want a new career, a side project, or simply to understand the digital world, we'll meet you where you are and show you exactly what comes next.</p></div>
+        <div class="stats"><div><strong>01</strong><span>Clear starting point</span></div><div><strong>04</strong><span>Guided skill stages</span></div><div><strong>∞</strong><span>Things you can make</span></div></div>
+      </section>
+
+      <section class="path section-pad" id="path">
+        <div class="section-heading"><div><p class="eyebrow">The roadmap</p><h2>Your path from<br /><em>“where do I start?”</em></h2></div><p>Move at your own pace. Each stage gives you the skills and confidence to take on the next.</p></div>
+        <div class="path-grid">
+          <article class="path-card start-card"><span class="stage">01 / Foundations</span><h3>Begin with the building blocks.</h3><p>Learn how the web works, think like a programmer, and make your first interactive page.</p><ul><li>HTML & CSS</li><li>JavaScript basics</li><li>Problem solving</li></ul><a href="#guides">Start foundations <span>→</span></a></article>
+          <article class="path-card build-card"><span class="stage">02 / Builder</span><h3>Turn ideas into real projects.</h3><p>Get comfortable with modern tools and create sites that work beautifully on every screen.</p><ul><li>Responsive design</li><li>Git & GitHub</li><li>APIs & data</li></ul><a href="#guides">Build projects <span>→</span></a></article>
+          <article class="path-card craft-card"><span class="stage">03 / Craft</span><h3>Write code others love to use.</h3><p>Go deeper with frameworks, testing, and the habits that make great developers.</p><ul><li>React & frameworks</li><li>Databases</li><li>Testing & teamwork</li></ul><a href="#guides">Level up <span>→</span></a></article>
+          <article class="path-card expert-card"><span class="stage">04 / Expert</span><h3>Shape systems. Lead with confidence.</h3><p>Design scalable software, grow your point of view, and create impact beyond the code.</p><ul><li>System design</li><li>Cloud & deployment</li><li>Technical leadership</li></ul><a href="#guides">Go further <span>→</span></a></article>
+        </div>
+      </section>
+
+      <section class="guide-section section-pad" id="guides">
+        <div class="guide-image"></div>
+        <div class="guide-content"><p class="eyebrow">Learn by doing</p><h2>Small lessons.<br /><em>Big momentum.</em></h2><p>Our step-by-step guides are built around projects, not jargon. Each one gives you a satisfying result before you move on.</p><div class="guide-list"><button class="guide-item active" data-guide="Your first website|HTML & CSS · 45 min|Turn a blank page into your personal corner of the internet."><span>01</span><b>Your first website</b><i>+</i></button><button class="guide-item" data-guide="Make it interactive|JavaScript · 60 min|Add buttons, choices, and delightful behavior to your page."><span>02</span><b>Make it interactive</b><i>+</i></button><button class="guide-item" data-guide="Build a tiny app|JavaScript · 90 min|Create a useful app and learn how code fits together."><span>03</span><b>Build a tiny app</b><i>+</i></button></div></div>
+        <aside class="lesson-card"><p class="lesson-label">Up next</p><h3 id="lessonTitle">Your first website</h3><p id="lessonMeta">HTML & CSS · 45 min</p><p id="lessonDesc">Turn a blank page into your personal corner of the internet.</p><a class="button dark-button" href="#toolkit">Open guide <span>↗</span></a></aside>
+      </section>
+
+      <section class="toolkit section-pad" id="toolkit"><div class="section-heading"><div><p class="eyebrow">Your coding toolkit</p><h2>Good tools make<br /><em>learning lighter.</em></h2></div><p>Start simple. These trusted, beginner-friendly picks are free or have generous free plans.</p></div>
+        <div class="tool-grid"><a href="https://code.visualstudio.com/" target="_blank" rel="noreferrer" class="tool"><span class="tool-icon blue">⌘</span><div><h3>VS Code</h3><p>A powerful, approachable code editor.</p></div><i>↗</i></a><a href="https://github.com/" target="_blank" rel="noreferrer" class="tool"><span class="tool-icon black">●</span><div><h3>GitHub</h3><p>Save, share, and collaborate on code.</p></div><i>↗</i></a><a href="https://www.freecodecamp.org/" target="_blank" rel="noreferrer" class="tool"><span class="tool-icon green">ƒ</span><div><h3>freeCodeCamp</h3><p>Hands-on coding lessons and projects.</p></div><i>↗</i></a><a href="https://developer.mozilla.org/" target="_blank" rel="noreferrer" class="tool"><span class="tool-icon orange">M</span><div><h3>MDN Web Docs</h3><p>The web’s clearest coding reference.</p></div><i>↗</i></a><a href="https://www.frontendmentor.io/" target="_blank" rel="noreferrer" class="tool"><span class="tool-icon pink">✦</span><div><h3>Frontend Mentor</h3><p>Real designs to turn into real code.</p></div><i>↗</i></a><a href="https://roadmap.sh/" target="_blank" rel="noreferrer" class="tool"><span class="tool-icon yellow">⌁</span><div><h3>roadmap.sh</h3><p>Community-built paths for every role.</p></div><i>↗</i></a></div>
+      </section>
+      <section class="closing"><div class="closing-photo"></div><div class="closing-copy"><p class="eyebrow light">Your first step is enough</p><h2>Ready to make<br />something <em>real?</em></h2><a href="#path" class="button button-primary">Choose your path <span>→</span></a></div></section>
+    </main>
+    <footer><a class="brand" href="#top"><span class="brand-mark">&lt;/&gt;</span>CodeBloom</a><p>Made for the curious.</p><a href="#top">Back to top ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
